@@ -1,46 +1,68 @@
-Create a github account
-Download git 
-Open the downloaded git file
-Accept everything, push next buttons, checkmark the launch git bash box.
-Now you see a window like cmd, after that write following:
-1.Step: git config –global user.name “Kazim Mammadli” press enter ( You should enter your name)
-2.Step: git config –global user.email kazimammadli@gmail.com  press enter( you should enter your email)
-3.Step: git config –global init.default branch main  press enter 
-Additional info : ( if you need any help related these commands, write: git help config)
-4.Step: cd :/users/kevin/….  press enter
-5.Step: git init press enter
-6.Step (track files): git add filename press enter or git add . ( tracking all file in folder)
-7.Step: git commit -m “first commit -  committing all files to the repository”press enter
+Using GitHub: Repositories, Pull Requests, and Issues
+1. Repositories
+A repository (repo) is where all your project files and version history are stored on GitHub.
 
-If you have made changes to the file, type “ git status” to see what is changed, and to see the difference type “git diff”.If you are satisfied with differences type “git add filename”.
+Creating a Repository
+Go to GitHub and log in.
+Click on the + (New Repository) button.
+Choose a repository name and set it as public or private.
+Check "Initialize this repository with a README" (optional).
+Click "Create repository".
+Uploading Files to a Repository
+Open the repository on GitHub.
+Click "Add file" > "Upload files".
+Drag and drop files or click "Choose your files".
+Add a commit message (e.g., "Initial upload").
+Click "Commit changes".
+2. Branches and Pull Requests (PRs)
+What is a Branch?
+A branch is a copy of the main code where you can make changes without affecting the main branch. Once changes are tested, they can be merged into the main branch.
 
-If you want to remove a file from staging type “git restore –staged filename”
+Creating a Branch on GitHub
+Open your repository.
+Click on the "main" branch dropdown (top left).
+Type a new branch name (e.g., feature-login).
+Click "Create branch".
+Making Changes in a Branch
+Switch to your branch from the branch dropdown.
+Edit or upload files.
+Click "Commit changes" after making edits.
+Creating a Pull Request (PR)
+A Pull Request (PR) is used to propose changes from one branch to another (e.g., from feature-login to main).
 
-To see the all commits type “git log”, if you want to see all commits in one line type “git log –oneline”
+Open the repository.
+Click "Pull requests" > "New pull request".
+Choose the base branch (main) and the compare branch (your branch).
+Review changes and add a description.
+Click "Create pull request".
+Team members can review and comment before merging.
+Merging a Pull Request
+Go to the Pull Requests tab.
+Open the PR.
+Click "Merge pull request" > "Confirm merge".
+After merging, you can delete the branch.
+3. Issues
+Issues are used for reporting bugs, requesting features, or discussing tasks in a project.
 
-To change previous commit type :git commit -m “Changed file name to smth” – amend
+Creating an Issue
+Open the repository.
+Click "Issues" > "New Issue".
+Add a title and description of the issue.
+Assign it to a team member (optional).
+Click "Submit new issue".
+Closing an Issue
+Open the issue.
+Click "Close issue" (if it's resolved).
+If it’s fixed in a pull request, link the issue in the PR by writing:
+nginx
+Copy
+Edit
+Fixes #issue-number
+Once the PR is merged, the issue will close automatically.
+Summary
+🔹 Repositories: Store your project files.
+🔹 Branches: Work on different features separately.
+🔹 Pull Requests: Propose changes and merge branches.
+🔹 Issues: Track bugs and feature requests.
 
-To jump previous commit type “git reset (tag of commit)”
-
-To commit the change in the branch, type “git commit  -a -m “updatsdkfajdk”
-
-BRANCH operations:
-We have main branch and other created branches, if we want to test smth, we test it on the created branches, then apply the change to the main.
-Creating a branch, type “git branch (branchname)”
-
-Seeing all branches, type “git branch”
-
-Switching branch, type “git switch (branchname)”
-
-Merging branch to the main, type “git merge -m “merge to main” (branchname)
-
-Deleting branch, type “git branch -d (branchname)” 
-
-Github part:
-After creating a repository, it gives us instructions to upload our folder to GitHub. After doing all the steps, 
-Download Change in github to your local computer, type “git pull”
-
-
-
-
-
+This way, you can manage your project entirely from GitHub without using Git Bash! 
